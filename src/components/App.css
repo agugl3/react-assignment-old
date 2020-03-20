@@ -57,13 +57,6 @@ ul {
   min-height: 452px;
   display: grid;
 }
-@media only screen and (max-width: 767px) { 
-  .box-container .tile{
-    width: 47%;
-    min-height: 415px;
-  }
-  
-}
 .box-container .tile-inner{
   color: white;
   background: #333;
@@ -133,11 +126,6 @@ ul {
 .search-box input[type="text"] {
   width: 50%;
 }
-@media only screen and (max-width: 767px) { 
-  .search-box input[type="text"] {
-    width: 77%;
-  }
-}
 .search-box p {
   font-weight: 400;
   margin-bottom: 0;
@@ -159,6 +147,13 @@ ul {
   font-size: 20px;
 }
 @media only screen and (max-width: 767px) { 
+  .search-box input[type="text"] {
+    width: 77%;
+  }
+  .box-container .tile{
+    width: 47%;
+    min-height: 415px;
+  }
   .search-box {
     width: 100%;
   }

@@ -57,7 +57,13 @@ ul {
   min-height: 452px;
   display: grid;
 }
-
+@media only screen and (max-width: 767px) { 
+  .box-container .tile{
+    width: 47%;
+    min-height: 415px;
+  }
+  
+}
 .box-container .tile-inner{
   color: white;
   background: #333;
@@ -98,6 +104,7 @@ ul {
 
 .tile img {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
 .tile ul{
@@ -126,6 +133,11 @@ ul {
 .search-box input[type="text"] {
   width: 50%;
 }
+@media only screen and (max-width: 767px) { 
+  .search-box input[type="text"] {
+    width: 77%;
+  }
+}
 .search-box p {
   font-weight: 400;
   margin-bottom: 0;
@@ -145,4 +157,16 @@ ul {
   text-align: center;
   padding: 20px 0 10px;
   font-size: 20px;
+}
+@media only screen and (max-width: 767px) { 
+  .search-box {
+    width: 100%;
+  }
+  .sort-dropdown {
+    float: left;
+    width: 100%;
+  }
+  .sort-dropdown select {
+    width: 100%;
+  }
 }
